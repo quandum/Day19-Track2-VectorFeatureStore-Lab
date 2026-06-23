@@ -27,5 +27,4 @@ Ngạc nhiên nhất là BM25 trên exact queries (96.7%) outperformed vector (8
 
 ## Bonus challenge
 
-- [ ] Đã làm bonus (xem `bonus/`)
-- [ ] Pair work với: _<tên đồng đội nếu có>_
+- [x] Đã làm bonus (xem `bonus/`)
