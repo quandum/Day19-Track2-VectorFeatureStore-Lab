@@ -7,6 +7,8 @@
 # %% [markdown]
 # # NB3 — FastAPI `/search` Endpoint + Latency Benchmark
 #
+# **Học viên:** Trần Mạnh Chánh Quân — **Mã học viên:** 2A202600786
+#
 # **Stack:** FastAPI + uvicorn + httpx (client). Searcher từ `app/search.py`.
 # Maps to slide §7 (Production Patterns) + deliverable bullets 1, 4.
 #

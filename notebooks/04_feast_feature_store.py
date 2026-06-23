@@ -7,6 +7,8 @@
 # %% [markdown]
 # # NB4 — Feast Feature Store: 3 Feature Views
 #
+# **Học viên:** Trần Mạnh Chánh Quân — **Mã học viên:** 2A202600786
+#
 # **Stack:** Feast (LF AI&Data 2024+) + SQLite online store + Parquet offline.
 # Maps to slide §6 (Feast Feature Store) + deliverable bullet 3.
 #

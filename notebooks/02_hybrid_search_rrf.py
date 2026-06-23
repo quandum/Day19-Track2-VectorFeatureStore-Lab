@@ -1,3 +1,4 @@
+
 # ---
 # jupyter:
 #   jupytext:
@@ -6,6 +7,8 @@
 
 # %% [markdown]
 # # NB2 — Hybrid Search: BM25 + Vector + RRF
+#
+# **Học viên:** Trần Mạnh Chánh Quân — **Mã học viên:** 2A202600786
 #
 # **Stack:** `rank-bm25` cho BM25 sparse + `qdrant-client` cho dense + RRF fusion.
 # Maps to slide §3 (Hybrid Search Mechanics) + deliverable bullet 2.

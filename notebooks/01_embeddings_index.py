@@ -7,6 +7,8 @@
 # %% [markdown]
 # # NB1 — Embeddings & Vector Indexing
 #
+# **Học viên:** Trần Mạnh Chánh Quân — **Mã học viên:** 2A202600786
+#
 # **Stack:** `fastembed` (ONNX, CPU) + Qdrant in-memory.
 # Maps to slide §1 (Embeddings) + §2 (Vector DB Landscape) + deliverable bullet 1.
 #
