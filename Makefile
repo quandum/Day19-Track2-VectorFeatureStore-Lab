@@ -2,12 +2,12 @@
 ## Two paths: lightweight (default, no Docker) and full Docker.
 
 VENV     := .venv
-PY       := $(VENV)/bin/python
-PIP      := $(VENV)/bin/pip
-JUPYTER  := $(VENV)/bin/jupyter
-JUPYTEXT := $(VENV)/bin/jupytext
-UVICORN  := $(VENV)/bin/uvicorn
-PYTEST   := $(VENV)/bin/pytest
+PY       := $(VENV)\Scripts\python
+PIP      := $(VENV)\Scripts\pip
+JUPYTER  := $(VENV)\Scripts\jupyter
+JUPYTEXT := $(VENV)\Scripts\jupytext
+UVICORN  := $(VENV)\Scripts\uvicorn
+PYTEST   := $(VENV)\Scripts\pytest
 
 .DEFAULT_GOAL := help
 

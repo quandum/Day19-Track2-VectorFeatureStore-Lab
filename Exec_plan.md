@@ -1,6 +1,7 @@
 # Kế hoạch thực hiện Lab 19 — Vector Store + Feature Store (Track 2)
 
-**Học viên:** Trần Mạnh Chánh Quân — **MSSV:** 2A202600786  
+**Học viên:** Trần Mạnh Chánh Quân — **Mã học viên:** 2A202600786  
+**Cohort:** A20-K2
 **Path:** Lite (default) — `fastembed` + Qdrant in-memory + SQLite Feast + FastAPI  
 **Tổng điểm:** 100 pts core + 20 pts bonus (optional)
 
