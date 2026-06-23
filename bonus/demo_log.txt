@@ -1,0 +1,138 @@
+(.venv) PS C:\Users\quand\OneDrive\Documents\VinUni-AI2k_2\Day19-Lab> .venv\Scripts\python bonus/demo.py
+============================================================
+  HybridMemoryAgent — 5-Query Demo
+  Học viên: Trần Mạnh Chánh Quân
+============================================================
+
+📝 Seeding episodic memories...
+  [u_001] remembered: Kubernetes helps auto-scale containerized applications based...
+  [u_001] remembered: Cloud security best practices include encryption at rest and...
+  [u_001] remembered: I read a paper about transformer attention mechanisms for NL...
+  [u_001] remembered: Vector databases like Qdrant are optimized for similarity se...
+  [u_001] remembered: Feature stores like Feast provide a single source of truth f...
+  [u_001] remembered: The Vietnamese AI market is growing fast with many startups ...
+  [u_001] remembered: Auto-scaling infrastructure can reduce cloud costs by up to ...
+
+────────────────────────────────────────────────────────────
+📌 Query 1: Simple lookup (vector hit expected)
+   "What have I read about Kubernetes?"
+────────────────────────────────────────────────────────────
+--- Context for user u_001 ---
+Query: 'What have I read about Kubernetes?'
+
+User profile:
+  - Topic affinity: cloud
+  - Reading speed: 187 wpm
+  - Language: vi
+  - Recent activity: 11 queries in last hour
+  - Topics explored (24h): 4 topics
+
+Top-5 episodic memories:
+  1. I read a paper about transformer attention mechanisms for NLP
+  2. Kubernetes helps auto-scale containerized applications based on CPU load
+  3. Cloud security best practices include encryption at rest and in transit
+  4. Vector databases like Qdrant are optimized for similarity search at scale
+  5. Feature stores like Feast provide a single source of truth for ML features
+
+--- End context ---
+  (assembled in 3493.6ms)
+
+────────────────────────────────────────────────────────────
+📌 Query 2: Profile context needed (topic_affinity)
+   "Recommend what to read next"
+────────────────────────────────────────────────────────────
+--- Context for user u_001 ---
+Query: 'Recommend what to read next'
+
+User profile:
+  - Topic affinity: cloud
+  - Reading speed: 187 wpm
+  - Language: vi
+  - Recent activity: 11 queries in last hour
+  - Topics explored (24h): 4 topics
+
+Top-5 episodic memories:
+  1. I read a paper about transformer attention mechanisms for NLP
+  2. Vector databases like Qdrant are optimized for similarity search at scale
+  3. Kubernetes helps auto-scale containerized applications based on CPU load
+  4. Auto-scaling infrastructure can reduce cloud costs by up to 40%
+  5. Feature stores like Feast provide a single source of truth for ML features
+
+--- End context ---
+  (assembled in 32.8ms)
+
+────────────────────────────────────────────────────────────
+📌 Query 3: Fresh activity check (queries_last_hour)
+   "What am I focused on lately?"
+────────────────────────────────────────────────────────────
+--- Context for user u_001 ---
+Query: 'What am I focused on lately?'
+
+User profile:
+  - Topic affinity: cloud
+  - Reading speed: 187 wpm
+  - Language: vi
+  - Recent activity: 11 queries in last hour
+  - Topics explored (24h): 4 topics
+
+Top-5 episodic memories:
+  1. Kubernetes helps auto-scale containerized applications based on CPU load
+  2. I read a paper about transformer attention mechanisms for NLP
+  3. Cloud security best practices include encryption at rest and in transit
+  4. Feature stores like Feast provide a single source of truth for ML features
+  5. Vector databases like Qdrant are optimized for similarity search at scale
+
+--- End context ---
+  (assembled in 8.4ms)
+
+────────────────────────────────────────────────────────────
+📌 Query 4: Paraphrase query (vector wins over BM25)
+   "Tài liệu về tự động mở rộng hạ tầng"
+────────────────────────────────────────────────────────────
+--- Context for user u_001 ---
+Query: 'Tài liệu về tự động mở rộng hạ tầng'
+
+User profile:
+  - Topic affinity: cloud
+  - Reading speed: 187 wpm
+  - Language: vi
+  - Recent activity: 11 queries in last hour
+  - Topics explored (24h): 4 topics
+
+Top-5 episodic memories:
+  1. I read a paper about transformer attention mechanisms for NLP
+  2. Kubernetes helps auto-scale containerized applications based on CPU load
+  3. Cloud security best practices include encryption at rest and in transit
+  4. The Vietnamese AI market is growing fast with many startups in Ho Chi Minh City
+  5. Feature stores like Feast provide a single source of truth for ML features
+
+--- End context ---
+  (assembled in 9.4ms)
+
+────────────────────────────────────────────────────────────
+📌 Query 5: Mixed query — hybrid search + profile
+   "Give me a cloud security summary"
+────────────────────────────────────────────────────────────
+--- Context for user u_001 ---
+Query: 'Give me a cloud security summary'
+
+User profile:
+  - Topic affinity: cloud
+  - Reading speed: 187 wpm
+  - Language: vi
+  - Recent activity: 11 queries in last hour
+  - Topics explored (24h): 4 topics
+
+Top-5 episodic memories:
+  1. Cloud security best practices include encryption at rest and in transit
+  2. Auto-scaling infrastructure can reduce cloud costs by up to 40%
+  3. I read a paper about transformer attention mechanisms for NLP
+  4. Kubernetes helps auto-scale containerized applications based on CPU load
+  5. Feature stores like Feast provide a single source of truth for ML features
+
+--- End context ---
+  (assembled in 18.8ms)
+
+============================================================
+  ✅ Demo complete — all 5 queries ran successfully
+============================================================
